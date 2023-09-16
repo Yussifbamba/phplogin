@@ -85,7 +85,7 @@ body{
  /********* Home  ************/
 
  .nav{
-    background: #eff;
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,7 +95,15 @@ body{
  .logo{
     font-size: 25px;
     font-weight: 900;
+    
  }
+
+ .logo a{
+   
+    text-decoration: none;
+    color: black;
+ }
+
  .right-links{
     padding: 0 10px;
  }
@@ -114,5 +122,25 @@ body{
  .main-box .top{
     display: flex;
     flex-direction: row;
+    justify-content: space-between ;
 
  }
+ .bottom{
+    width: 100%;
+    margin-top: 20px;
+
+ }
+
+@media only screen and (max-width:840px) {
+    main-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.top .box{
+    margin: 10px 10px;
+}
+.bottom{
+    margin-top: 0;
+}
